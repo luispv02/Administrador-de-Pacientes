@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Pacientes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container-fluid p-0">
+        <header>
+            <div class="row py-3 m-0">
+                <div class="col">
+                    <div class="title mb-5">
+                        <h3 class="text-center titulo">Administrador de Pacientes</h3>
+                        <h3 class="text-center titulo">Consultorio Dentista</h3>
+                    </div>
+
+                    <div class="menu">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2 d-flex align-items-center activo-pacientes">
+                                <img src="img/multiple-users-silhouette.svg" width="25px">
+                                <a class="nav-link" href="#">Pacientes</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <img src="img/add-user.svg" width="25px">
+                                <a class="nav-link" href="agregar-paciente.html">Agregar Paciente</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="">
+            <div class="row pt-2 m-1">
+                <div class="col">
+                    <h2 class="text-center fw-light mt-3">Pacientes</h2>
+                    <div class="lista-pacientes bg-white mb-5 mt-4">
+                        <table class="table ">
+                            <thead>
+                                <tr class="tr">
+                                    <th>Id</th>
+                                    <th>Paciente</th>
+                                    <th>Telefono</th>
+                                    <th>Fecha</th>
+                                    <th>Hora</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="lista-pacientes">
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://kit.fontawesome.com/1b662a6313.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js" type="module"></script>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>

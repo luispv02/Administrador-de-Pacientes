@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Pacientes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container-fluid p-0">
+        <header>
+            <div class="row py-3 m-0">
+                <div class="col-12">
+                    <div class="title mb-5">
+                        <h4 class="text-center titulo">Administrador de Pacientes</h4>
+                        <h4 class="text-center titulo">Consultorio Dentista</h4>
+                    </div>
+
+                    <div class="menu">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2 d-flex align-items-center">
+                                <img src="img/multiple-users-silhouette.svg" width="25px">
+                                <a class="nav-link" href="index.html">Pacientes</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <img src="img/add-user.svg" width="25px">
+                                <a class="nav-link" href="agregar-paciente.html">Agregar Paciente</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="row pt-2 m-1">
+                <h2 class="text-center fw-light mt-3">Editar Paciente</h2>
+                
+                <div class="agregar-paciente mb-5">
+                    <form class="formulario p-3 rounded mt-4">
+                        <div class="mb-4">
+                            <label for="nombre-paciente" class="form-label m-0 mb-1">Nombre</label>
+                            <input type="text" class="form-control input-formulario p-0" id="nombre-paciente" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="telefono-paciente" class="form-label m-0 mb-1">Telefono</label>
+                            <input type="number" class="form-control input-formulario p-0" id="telefono-paciente" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="fecha-paciente" class="form-label m-0 mb-1">Fecha</label>
+                            <input type="date" class="form-control input-formulario p-0" id="fecha-paciente" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="hora-paciente" class="form-label m-0 mb-1">Hora</label>
+                            <input type="time" class="form-control input-formulario p-0" id="hora-paciente" aria-describedby="emailHelp">
+                        </div>
+
+                        <button type="submit" class="btn btn-agregar mt-3">Agregar Paciente Editado</button>
+
+                        <input type="hidden" id="hidden">
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/editar-paciente.js" type="module"></script>
+</body>
+</html>

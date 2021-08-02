@@ -1,0 +1,214 @@
+body {
+  width: 100%;
+  height: 100vh;
+  font-style: 16px;
+}
+
+header {
+  width: 100%;
+  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 255, 229, 0.755911)), to(rgba(255, 255, 255, 0.921641)));
+  background: linear-gradient(180deg, rgba(0, 255, 229, 0.755911) 0%, rgba(255, 255, 255, 0.921641) 100%);
+  /*     box-shadow: 0px -19px 58px 0px #8c8c8c; */
+}
+
+main {
+  width: 100%;
+}
+
+.nav-item {
+  /* background: ##4e4e4e54; */
+  padding: 5px 15px;
+}
+
+.nav-item:hover {
+  background: #98989887;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.nav-link {
+  color: black;
+  font-size: 1.1em;
+  width: 100%;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.nav-link:focus {
+  color: black;
+}
+
+.table {
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #cecece21;
+  border: 1px solid #ccc;
+}
+
+tr {
+  border-style: hidden;
+  -webkit-box-shadow: 0 0px 6px -3px black;
+          box-shadow: 0 0px 6px -3px black;
+}
+
+tr > th {
+  color: #333;
+  font-weight: 600;
+}
+
+td {
+  color: #333;
+  font-weight: 400;
+}
+
+.lista-pacientes {
+  overflow-x: auto;
+  border: 1px solid #dcdcdc;
+}
+
+.icono-eliminar,
+.icono-editar {
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+  width: 23px;
+}
+
+.icono-eliminar:hover,
+.icono-editar:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+
+.formulario {
+  -webkit-box-shadow: 4px 5px 17px -2px #8c8c8c;
+          box-shadow: 4px 5px 17px -2px #8c8c8c;
+  border: 1px solid #d2d2d2;
+}
+
+.input-formulario {
+  border: none;
+  border-bottom: 1px solid #8f8f8f;
+  border-radius: 0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.input-formulario:focus {
+  border-color: #8f8f8f;
+  -webkit-box-shadow: none;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all  300ms;
+  transition: all  300ms;
+}
+
+.btn-agregar {
+  font-weight: 500;
+  border: 1px solid #545454;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.btn-agregar:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-box-shadow: 4px 4px 11px -7px black;
+          box-shadow: 4px 4px 11px -7px black;
+}
+
+.btn-agregar:focus,
+.btn-agregar:active {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+#telefono::-webkit-inner-spin-button,
+#telefono-paciente::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+label {
+  font-weight: 600;
+}
+
+.mb-4 {
+  position: relative;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.mb-4:hover {
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.activo-pacientes {
+  background: #98989887;
+}
+
+.activo-agregar {
+  background: #98989887;
+}
+
+@media (min-width: 620px) {
+  .table {
+    width: 100%;
+  }
+  .formulario {
+    padding: 20px 30px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header {
+    width: 34%;
+    height: 100vh;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-right: 1px solid #969696;
+  }
+  main {
+    width: 66%;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+  .titulo {
+    text-align: left !important;
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    width: 40%;
+  }
+  .formulario {
+    margin: 0px 50px;
+  }
+  main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 85px;
+  }
+  .titulo {
+    font-size: 28px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
